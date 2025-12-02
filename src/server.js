@@ -54,6 +54,10 @@ app.use('/', (req, res) => {
   res.send('Hello node js!');
 });
 
+app.use((err, req, res, next) => {
+  return res.status(500).send('An error occured!');
+});
+
 // server.js
 //controllers
 //routes

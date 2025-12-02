@@ -7,7 +7,7 @@ exports.loginService = async (data) => {
   const { email, password } = data;
 
   if (email !== userData.email || password !== userData.password)
-    return 'invalid credentials';
+    throw new Error('invalid credentials');
 
   return userData;
 };
