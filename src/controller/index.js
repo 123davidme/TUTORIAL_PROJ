@@ -1,3 +1,3 @@
-// User -----> login -------> jwt token ----->
+const authController = require('./auth');
 
-//
+module.exports = { authController };
