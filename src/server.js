@@ -59,15 +59,3 @@ app.use('/', (req, res) => {
 app.use((err, req, res, next) => {
   return res.status(500).send('An error occured!');
 });
-
-// server.js
-//controllers
-//routes
-//services
-
-//git
-//github
-//gitlab
-//creating branches
-//pulling and pushing
-//creating pull requests
