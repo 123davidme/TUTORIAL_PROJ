@@ -11,6 +11,8 @@ const app = express();
 // creating port
 const port = process.env.PORT || 3000;
 
+///yada yada yada
+
 // invoking database into server.js file
 connectToDb()
   .then(() => {
@@ -54,14 +56,6 @@ app.use('/', (req, res) => {
   res.send('Hello node js!');
 });
 
-// server.js
-//controllers
-//routes
-//services
-
-//git
-//github
-//gitlab
-//creating branches
-//pulling and pushing
-//creating pull requests
+app.use((err, req, res, next) => {
+  return res.status(500).send('An error occured!');
+});
